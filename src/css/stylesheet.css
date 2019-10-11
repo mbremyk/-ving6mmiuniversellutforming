@@ -39,7 +39,8 @@ header {
 
 .logoutbox {
     float: right;
-    background-color: #2a2339;
+    height: 100%;
+    background-color: #362D49;
     border-radius: 10px;
     margin-right: 5px;
 }
@@ -65,22 +66,38 @@ header {
 }
 
 .content-frame {
-  display: grid;
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto auto auto;
-  grid-gap: 5px 0;
-  background-color: rgba(19, 11, 36, 0.3);
-  padding: 10px 10px 0 10px
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto 1fr;
+    grid-gap: 5px 0;
+    background-color: rgba(130, 130, 130, 0.2);
+    padding: 15px 15px 0 15px;
+}
+
+.content-frame a {
+    text-decoration: none;
+    color: #3B873C;
+    background-image: radial-gradient(#3B873C, #3B873C);
+    background-position: 0px 15px;
+    background-repeat: repeat-x;
+    background-size: 100% 2px;
 }
 
 .content-frame img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    max-width: 100%;
+}
+
+.lead {
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  max-width: 100%;
+  grid-row-start: 2;
+  grid-row-end: 2;
 }
 
 /* Footer */
