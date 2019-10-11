@@ -24,17 +24,24 @@ header {
     text-decoration: none;
 }
 
+.topnav a.active {
+    background-color: #337534;
+}
+
 .topnav a:hover {
     background-color: #E8E7EB;
     color: #07010E;
 }
 
-.topnav a.active {
-    background-color: #4CAF50;
+.logoutbox {
+    float: right;
+    background-color: #2a2339;
+    border-radius: 10px;
+    margin-right: 5px;
 }
 
-.logoutbox{
-    float: right;
+.logoutbox a:hover {
+  border-radius: 10px;
 }
 
 .fa-newspaper-o{
@@ -44,12 +51,22 @@ header {
 /* Main content */
 .main-content{
     width: 100%;
-    background-color: #1D1138;
+    height: 100%;
+    background-color: #27174C;
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 1em;
-    border:solid;
+    grid-template-columns: auto 60% auto;
+    grid-gap: 5px;
     position: relative;
+}
+
+.content-frame {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto auto;
+  grid-gap: 5px 0;
+  background-color: rgba(19, 11, 36, 0.3);
 }
 
 /* Footer */
