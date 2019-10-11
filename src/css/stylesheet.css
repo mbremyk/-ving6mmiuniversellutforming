@@ -20,6 +20,10 @@ header {
     width: 100%;
 }
 
+.fa-newspaper-o{
+    font-size: 17px;
+}
+
 .topnav a {
     float: left;
     text-align: center;
@@ -49,9 +53,46 @@ header {
   border-radius: 10px;
 }
 
-.fa-newspaper-o{
-    font-size: 17px;
+.searchbar {
+  float: right;
 }
+
+.searchbar input[type=text] {
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  font-size: 17px;
+  border-radius: 10px 0 0 10px;
+  background-color: #362D49;
+}
+
+.searchbar input[type=text]::placeholder {
+  color: rgba(232,231,235, 0.8);
+}
+
+.searchbar input[type=text]:focus {
+  background-color: #E8E7EB;
+  outline-style: none;
+}
+
+.searchbar input[type=text]:focus::placeholder {
+  color: #E8E7EB;
+  color: rgba(7,1,14, 0.6);
+}
+
+.searchbar button {
+  color: #E8E7EB;
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #362D49;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+}
+
 
 /* Main content */
 .main-content{
