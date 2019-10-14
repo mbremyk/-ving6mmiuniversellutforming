@@ -208,8 +208,25 @@ header {
 /* Footer */
 
 footer {
-  position: relative;
+    position: relative;
     top: 48px;
     background-color: #130B24;
     height: 100px;
+    font-size: 10px;
+}
+
+.contact-info {
+  position: absolute;
+  bottom: 15px;
+  left: 35px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 15px;
+  right: 35px;
 }
