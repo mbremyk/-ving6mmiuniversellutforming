@@ -1,6 +1,7 @@
 /* General content styling */
 html, body {
-    height: 100%;
+    min-height: 100%;
+    position: relative;
 }
 
 body {
@@ -8,6 +9,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #27174C;
     color: #E8E7EB;
+    padding-bottom: 100px;
 }
 
 /* Header */
@@ -50,60 +52,60 @@ header {
 }
 
 .logoutbox a:hover {
-  border-radius: 10px;
+    border-radius: 10px;
 }
 
 .searchbar {
-  float: right;
+    float: right;
 }
 
 .searchbar input[type=text] {
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  font-size: 17px;
-  border-radius: 10px 0 0 10px;
-  background-color: #362D49;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    font-size: 17px;
+    border-radius: 10px 0 0 10px;
+    background-color: #362D49;
 }
 
 .searchbar input[type=text]::placeholder {
-  color: rgba(232,231,235, 0.8);
+    color: rgba(232,231,235, 0.8);
 }
 
 .searchbar input[type=text]:focus {
-  background-color: #E8E7EB;
-  outline-style: none;
+    background-color: #E8E7EB;
+    outline-style: none;
 }
 
 .searchbar input[type=text]:focus::placeholder {
-  color: #E8E7EB;
-  color: rgba(7,1,14, 0.6);
+    color: #E8E7EB;
+    color: rgba(7,1,14, 0.6);
 }
 
 .searchbar button {
-  color: #E8E7EB;
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #362D49;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-  border-radius: 0 10px 10px 0;
+    color: #E8E7EB;
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #362D49;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
 }
 
 
 /* Main content */
-.main-content{
-    top: 48px;
+.main-content {
+    top: 58px;
     width: 100%;
     height: 100%;
-    background-color: #27174C;
     display: grid;
     grid-template-columns: auto 60% auto;
     grid-gap: 5px;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .content-frame {
@@ -111,19 +113,10 @@ header {
     grid-column-start: 2;
     grid-column-end: 2;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto auto 1fr;
+    grid-template-rows: auto auto auto auto auto auto 1fr;
     grid-gap: 5px 0;
     background-color: rgba(130, 130, 130, 0.2);
-    padding: 15px 15px 0 15px;
-}
-
-.content-frame a {
-    text-decoration: none;
-    color: #3B873C;
-    background-image: radial-gradient(#3B873C, #3B873C);
-    background-position: 0px 15px;
-    background-repeat: repeat-x;
-    background-size: 100% 2px;
+    padding: 15px;
 }
 
 .content-frame img {
@@ -139,7 +132,7 @@ header {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 2;
-    text-size: 32px;
+    font-size: 36px;
 }
 
 .lead {
@@ -149,12 +142,14 @@ header {
     grid-row-end: 3;
 }
 
-.author, .date-time {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 4;
-  grid-row-end: 4;
-  margin: 10px 0;
+.author-date-time {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .social-media {
@@ -169,13 +164,52 @@ header {
     grid-column-end: 2;
     grid-row-start: 5;
     grid-row-end: 5;
+    margin-bottom: 10px;
+}
+
+.text-body a, .lead a {
+    text-decoration: none;
+    color: #3B873C;
+    background-image: radial-gradient(#3B873C, #3B873C);
+    background-position: 0px 15px;
+    background-repeat: repeat-x;
+    background-size: 100% 2px;
+}
+
+.text-body a:hover, .lead a:hover {
+    color: #130B24;
+    background-image: radial-gradient(#130B24, #130B24);
+}
+
+.text-body img {
+    max-width: 70%;
+}
+
+.tags {
+    margin-top: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 6;
+}
+
+.tags a {
+    background-color: #337534;
+    color: #E8E7EB;
+    padding: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.tags a:hover {
+    background-color: #E8E7EB;
+    color: #07010E;
 }
 
 /* Footer */
 
 footer {
-    bottom: 0px;
-    width: 100%;
     background-color: #130B24;
-    height: 50px;
+    width: 100%;
+    height: 100px;
 }
