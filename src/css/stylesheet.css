@@ -104,7 +104,7 @@ header {
     grid-template-columns: auto 60% auto;
     grid-gap: 5px;
     position: relative;
-    margin: 10px 0;
+    margin: 10px 0 20px 0;
 }
 
 .content-frame {
@@ -216,9 +216,9 @@ footer {
 }
 
 .contact-info {
-  position: absolute;
-  bottom: 15px;
-  left: 35px;
+    position: absolute;
+    bottom: 15px;
+    left: 35px;
 }
 
 .contact-info p {
@@ -226,7 +226,7 @@ footer {
 }
 
 .copyright {
-  position: absolute;
-  bottom: 15px;
-  right: 35px;
+    position: absolute;
+    bottom: 15px;
+    right: 35px;
 }
